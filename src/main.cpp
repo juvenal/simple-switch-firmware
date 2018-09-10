@@ -11,7 +11,7 @@ unsigned long time = 0;
 const unsigned long debounce = 200;
 
 void setup() {
-    // put your setup code here, to run once:
+    // Put your setup code here, to run once:
     pinMode(switchPin, INPUT);      // The number of switcher pin to look for
     pinMode(LEDPin, OUTPUT);        // The number of LED pin to set output
     Serial.begin(9600);             // Set serial interface
@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
+    // Put your main code here, to run repeatedly:
     reading = digitalRead(switchPin);
 
     if (check == LOW) {
